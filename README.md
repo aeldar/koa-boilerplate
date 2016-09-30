@@ -3,6 +3,13 @@ Koa boilerplate
 
 Simple boilerplate for Koa v2 app.
 
+Install
+-------
+
+```
+git clone git@github.com:aeldar/koa-boilerplate.git
+npm install
+```
 
 Type checking
 -------------
@@ -28,6 +35,8 @@ npm run serve
 
 Build
 -----
+
+To run app in dev mode no need to build it. Just skip to run section.
 
 Building will place the app into _dist_ directory.
 
