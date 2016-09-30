@@ -10,7 +10,8 @@
     "start:debug": "nodemon src/server.js --exec babel-node-debug",
     "build:dist": "babel src -d dist --source-maps inline",
     "build": "npm run clean && npm run build:dist",
-    "serve": "node dist/server.js"
+    "serve": "node dist/server.js",
+    "serve:debug": "node-debug --hidden node_modules/ --hidden .test.js$ dist/server.js"
   },
   "keywords": [],
   "author": "Eldar Aliyev <eldar.aliyev8@gmail.com>",
@@ -28,6 +29,7 @@
     "babel-preset-latest": "^6.16.0",
     "babel-register": "^6.16.3",
     "mocha": "^3.1.0",
+    "node-inspector": "^0.12.8",
     "nodemon": "^1.10.2",
     "rimraf": "^2.5.4"
   }
