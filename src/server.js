@@ -5,7 +5,7 @@ const app = new Koa();
 const router = new Router();
 const PORT = 8431;
 
-router.get('/', async ctx => {
+router.get('/', async (ctx = {}) => {
   console.log('success!');
 
   const a = 1234;
@@ -17,6 +17,7 @@ router.get('/', async ctx => {
   ctx.body = {
     success: true
   };
+  ctx.status = 200;
 });
 
 app.use(router.routes());
