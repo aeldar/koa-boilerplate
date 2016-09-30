@@ -58,6 +58,14 @@ To debug built version:
 npm run serve:debug
 ```
 
+Linting
+-------
+
+```
+npm run lint
+```
+It runs with _--fix_ option (trying to fix what it can).
+
 Type checking
 -------------
 
@@ -91,4 +99,4 @@ TODO
 ----
 
 - Fix port for testing.
-- Add linting.
+- Add chai, sinon. Add eslint support for them.
