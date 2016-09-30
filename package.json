@@ -1,7 +1,7 @@
 {
-  "name": "killme-koa",
-  "version": "1.0.0",
-  "description": "",
+  "name": "koa-boilerplate",
+  "version": "0.1.0",
+  "description": "Koa v2 boilerplate with flow types.",
   "main": "server.js",
   "scripts": {
     "test": "mocha --compilers js:babel-register",
@@ -14,9 +14,9 @@
     "serve:debug": "npm run build && node-debug dist/server.js",
     "flow": "flow; test $? -eq 0 -o $? -eq 2"
   },
-  "keywords": [],
+  "keywords": ["koa", "flow", "debug", "boilerplate"],
   "author": "Eldar Aliyev <eldar.aliyev8@gmail.com>",
-  "license": "ISC",
+  "license": "MTI",
   "dependencies": {
     "babel-runtime": "^6.11.6",
     "koa": "^2.0.0",
