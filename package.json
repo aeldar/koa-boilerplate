@@ -10,8 +10,8 @@
     "start:debug": "nodemon src/server.js --exec babel-node-debug",
     "build:dist": "babel src -d dist --source-maps inline",
     "build": "npm run clean && npm run build:dist",
-    "serve": "node dist/server.js",
-    "serve:debug": "node-debug --hidden node_modules/ --hidden .test.js$ dist/server.js",
+    "serve": "npm run build && node dist/server.js",
+    "serve:debug": "npm run build && node-debug dist/server.js",
     "flow": "flow; test $? -eq 0 -o $? -eq 2"
   },
   "keywords": [],
