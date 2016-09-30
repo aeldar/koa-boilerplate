@@ -1,5 +1,5 @@
 {
-  "presets": ["latest"],
+  "presets": ["latest-minimal"],
   "plugins": [
     "transform-runtime",
     "transform-flow-strip-types"

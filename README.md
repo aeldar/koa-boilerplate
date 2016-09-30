@@ -82,6 +82,11 @@ could be installed with tag "@next". Like this:
 npm i -S koa-router@next
 ```
 
+Babel presets
+-------------
+
+_babel-preset-latest-minimal_ determines what plugins are needed via feature detection. (That only makes sense for Node.js, but not for browsers.)
+
 TODO
 ----
 
