@@ -11,11 +11,15 @@ git clone git@github.com:aeldar/koa-boilerplate.git
 npm install
 ```
 
-Type checking
--------------
+Build
+-----
+
+To run app in dev mode no need to build it. Just skip to run section.
+
+Building will place the app into _dist_ directory.
 
 ```
-npm run flow
+npm run build
 ```
 
 Run
@@ -31,17 +35,6 @@ In production mode (build and run)
 
 ```
 npm run serve
-```
-
-Build
------
-
-To run app in dev mode no need to build it. Just skip to run section.
-
-Building will place the app into _dist_ directory.
-
-```
-npm run build
 ```
 
 Test
@@ -63,6 +56,13 @@ npm run start:debug
 To debug built version:
 ```
 npm run serve:debug
+```
+
+Type checking
+-------------
+
+```
+npm run flow
 ```
 
 Koa v1 vs v2
